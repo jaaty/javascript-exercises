@@ -1,5 +1,9 @@
-const repeatString = function() {
-
+const repeatString = function(word, numberOfTimes) {
+    let repeatedWord = '';
+    for (let i = 0; i < numberOfTimes; i++) {
+        repeatedWord += word;
+    }
+    return repeatedWord;
 };
 
 // Do not edit below this line
