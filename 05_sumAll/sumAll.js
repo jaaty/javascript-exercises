@@ -1,6 +1,9 @@
 const sumAll = function(num1, num2) {
     let sum = 0;
-    if (typeof(num1) !== Number || typeof(num2) !== Number) {
+    if (isNaN(num1)|| isNaN(num2)) {
+        return 'ERROR';
+    }
+    if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
         return 'ERROR';
     }
     if (num1 < 0 || num2 < 0) {
